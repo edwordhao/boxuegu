@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var obj = {
+        _cookie: ""
+    }
+    Object.defineProperty(obj, "cookie", {
+        git: function () {
+            return this._cookie;
+        },
+        set: function (value) {
+            this._cookie += value;
+        }
+    })
+
+</script>
+</body>
+</html>

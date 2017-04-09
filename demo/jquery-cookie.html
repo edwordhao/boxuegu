@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../views/public/assets/jquery/jquery.js"></script>
+    <script src="../views/public/assets/jquery-cookie/jquery.cookie.js"></script>
+    <script>
+        // $.cookie("cookieName", "cookieValue", {expires: num, path: "/"});
+        // $.cookie 后面只传一个参数的时候,是获取cookieName的值
+        // $.cookie 后面传两个参数的时候, 是创建一个会话cookie
+        // expires: 后面跟着的是天数, 创建一个cookie,让其有效期为 num 天
+        // path 是设置有效路径 cookie的路径用于设置能够读取cookie的顶级目录。
+            // 如果不设置有效路径，在默认情况下，只能在cookie设置当前页面读取该cookie
+
+        $.cookie("name", "zhangshan", {
+            expires: 7,
+			path: "/"
+        });
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
