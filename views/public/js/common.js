@@ -1,8 +1,5 @@
-
-	NProgress.start();
-
-	NProgress.done();
-
-	$('.navs ul').prev('a').on('click', function () {
-		$(this).next().slideToggle();
-	});
+define(["jquery", "template", "cookie"], function($, template){
+	var userInfo = JSON.parse($.cookie("userInfo"));
+	var htmlStr = template("userInfoTpl", userInfo);
+	$("#profile").html(htmlStr);
+});
